@@ -15,7 +15,6 @@ const NavBar = ({ data, logo = false, search = false, feedback = false }) => {
 	};
 
 	const _onSuccess = () => {
-		// show toast
 		showToast("Feedback Submitted", "success");
 	};
 
@@ -28,7 +27,7 @@ const NavBar = ({ data, logo = false, search = false, feedback = false }) => {
 				{search ? (
 					<div className={styles.searchWrapper}>
 						<SearchBar
-							placeholder="Search a album of your choice"
+							placeholder="Search"
 							data={data}
 						/>
 					</div>

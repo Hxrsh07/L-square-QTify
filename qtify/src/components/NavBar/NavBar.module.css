@@ -11,6 +11,7 @@
 
 .logoWrapper {
 	cursor: pointer;
+	margin-left: 20px; /* ✅ space to the left of logo */
 }
 
 .navbar {
@@ -19,19 +20,24 @@
 	height: 4.9333rem;
 	display: flex;
 	padding: 0;
-	align-items: center;
+	align-items: center; /* ✅ vertically centers logo */
 	justify-content: space-between;
 }
 
 .nav_link {
 	margin-left: 25px;
 	cursor: pointer;
-	background-color: var(--color-black);
-	border-radius: 10px;
+	background-color: black; /* ✅ black background */
+	border-radius: 10px; /* ✅ border-radius */
 	border: none;
 	font-size: 16px;
-	color: var(--color-primary);
+	color: #00ff00; /* ✅ green text */
 	padding: 10px 20px;
+	font-family: 'Poppins', sans-serif; /* ✅ Poppins font */
+}
+
+.nav_link:hover {
+	cursor: pointer; /* ✅ pointer on hover */
 }
 
 @media (max-width: 576px) {
